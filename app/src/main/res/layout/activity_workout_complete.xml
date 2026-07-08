@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/imgCheckmark"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/img_checkmark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Workout Complete!"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_dark"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Great job finishing your workout"
+        android:textSize="15sp"
+        android:textColor="@color/text_gray"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="32dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/purple_lighter"
+        android:padding="20dp"
+        android:layout_marginBottom="32dp">
+
+        <TextView
+            android:id="@+id/txtDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Duration: 10 Minutes"
+            android:textSize="17sp"
+            android:textColor="@color/text_dark"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/txtExerciseCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercises: 6"
+            android:textSize="17sp"
+            android:textColor="@color/text_dark" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGenerateAnother"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Generate Another"
+        android:backgroundTint="@color/purple_primary"
+        android:textColor="@color/white"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnSaveWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Save Workout"
+        android:backgroundTint="@color/green_success"
+        android:textColor="@color/white"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnGoHome"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Go Home"
+        android:backgroundTint="@color/purple_light"
+        android:textColor="@color/text_dark" />
+
+</LinearLayout>
