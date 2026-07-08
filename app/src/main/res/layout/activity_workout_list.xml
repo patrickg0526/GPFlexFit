@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Workout"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_primary" />
+
+    <TextView
+        android:id="@+id/txtWorkoutInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Body • 10 Minutes"
+        android:textSize="15sp"
+        android:textColor="@color/text_gray"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/purple_lighter">
+
+        <LinearLayout
+            android:id="@+id/llExerciseList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnRegenerate"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Regenerate"
+            android:backgroundTint="@color/purple_light"
+            android:textColor="@color/text_dark" />
+
+        <Button
+            android:id="@+id/btnStartWorkout"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Start Workout"
+            android:backgroundTint="@color/purple_primary"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
